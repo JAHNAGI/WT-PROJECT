@@ -1,0 +1,156 @@
+html{
+  
+    margin:auto;
+   overflow-x: hidden;
+    background-color: #cfe2f3;
+    width:100%;
+}
+input[type="text"],select,input[type="range"],input[type="number"],input[type="date"]{
+    display: block;
+    margin:auto;
+    width:95%;
+    outline:none;
+    height: 30px;
+    border-width:0 0 2px 0;
+    border-color: black;
+    box-sizing: border-box;
+    background-color: white;
+}
+form>section{
+    background-color: white;
+    margin:15px;
+    box-shadow:-1px -1px 2px,1px 1px 2px;
+    padding:5px;
+}
+form>section>p{
+    width:90%;
+    padding:5px;
+    padding-bottom:10px;
+    margin-left:10px;
+    border:2px solid rgb(137, 134, 134);
+    border-width:0 0 2px 0;
+    text-transform: capitalize;
+  font-weight: bold;
+}
+form>section>section>p{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left:25px;
+
+}
+form,main>section{
+    width:80%;
+    margin:auto;
+}
+form>section>section{
+    height:100px;
+    width:95%;
+    margin:auto;
+    border:2px solid red;
+    border-width:0 0 0.5px 0;
+    border-color:gray;
+
+}
+header h1{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: normal;
+    transform: scale(3,3);
+    color:#017cc2;
+    padding-bottom: 5px;
+}
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    width:100%;
+   
+    left:0;
+    margin:0;
+    padding:5px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow:0 2px 1px;
+}
+
+header p{
+    width:100%;
+    color:#017cc2;
+    word-spacing: 5px;
+}
+header article{
+    text-align: center;
+
+    
+    
+}
+#par{
+    background-color:#fff6d5;
+    border-radius:15px;
+    margin:auto;
+    width:65%;
+    padding:15px;
+    
+}
+#fix{
+    position: fixed;
+    writing-mode: sideways-lr;
+    text-transform: uppercase;
+   height:150px;
+   text-align: center;
+    top:50%;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    background-color:#287ac8 ;
+    right:0;
+}
+#arti{
+    
+    margin:auto;
+    text-align: center;
+}
+footer input[type="button"],article input{
+    padding:10px;
+    width:200px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    color:white;
+    border-radius: 15px!important;
+    font-weight: bold;
+}
+form input[type="button"]{
+    text-transform: uppercase;
+    text-align: center;
+    width:100px;
+    font-weight: bold;
+    padding:10px;
+    border-radius: 25px;
+    background-color: black;
+    color:white;
+}
+main{
+    margin-bottom:55px;
+}
+footer{
+    position: static;
+    background-color: white;
+    display: flex;
+   
+    flex-flow:row wrap;
+    text-transform: capitalize;
+    justify-content: space-around;
+}
+footer section{
+    padding-top:15px;
+}
+select option{
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+label{
+    text-transform: capitalize;
+}
