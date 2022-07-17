@@ -498,7 +498,7 @@
         
 		<article id="arti">
 		<a href=""><input style="width:200px;"type="button" value="previous page"></a>
-		<input type="submit" value="next page">
+		<input type="submit" id="submit"value="next page">
 		</article>
        
       </form>
@@ -531,7 +531,7 @@
 		<section>
 			
 			<a href="">
-				<input type="submit" onclick="return check()"value="next page">
+				<input type="submit" onclick="document.getElementById("submit").click();return false;"value="next page">
 			</a>
 		</section>
 	</footer>
