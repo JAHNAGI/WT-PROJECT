@@ -6,8 +6,11 @@
    
 }
 
-input:hover,select:hover{
-    border-color:#5e1f89!important;
+select:hover{
+    border-color:rgb(134, 38, 195);
+}
+input:hover{
+    border-color:rgb(134, 38, 195);
 }
 .green{color: white;
     background-color:rgb(134, 38, 195)}
