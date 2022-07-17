@@ -125,7 +125,7 @@ function vis(a){
     var ask3=document.getElementById("othern1");
     var ask4=document.getElementById("othern2");
     var ask5=document.getElementById("othern3");
-    if (a.name=="12th"){
+    if (a.value=="12th"){
         if (a.checked==true){
             ask1.style.display="block";
             a.nextElementSibling.setAttribute("class","btnb");
@@ -137,7 +137,7 @@ function vis(a){
             a.nextElementSibling.removeAttribute("class");
         }
     }
-    else if(a.name=="diploma"){
+    else if(a.value=="diploma"){
         if (a.checked==true){
             ask2.style.display="block";
             a.nextElementSibling.setAttribute("class","btnb");
