@@ -536,7 +536,29 @@
 			</a>
 		</section>
 	</footer>
-	<div id="fix" onclick="displ(this)" >feedback</div>
+	   <div id="bg" style=" width:100%;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+   height: 100%;
+    display: none;
+    background-color: black;
+    opacity: 0.5;">hello</div>
+    <div id="fix"  style=" cursor:pointer;position: fixed;
+   
+    writing-mode: sideways-lr;
+    text-transform: uppercase;
+  height: 200px;
+   text-align: center;
+    top:50%;
+   /* width:200px; */
+   margin:0;
+   
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    background-color:#287ac8 ;
+    right: 0;"onclick="displ(this)" >feedback</div>
    
     <section id="feed" style=" position: fixed;
     width:650px;
@@ -545,7 +567,7 @@
     box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
    border-radius:15px;
     left:50%;
-    display: none;
+    display:none ;
     background-color: white;
     transform: translateX(-50%);
     margin:auto;
@@ -705,16 +727,22 @@
             if (!a.hasAttribute("class")){
                 a.setAttribute("class","jahnag");
                 document.getElementById("feed").style.display="block";
+                document.getElementById("bg").style.display="block";
+
             }
             else{
 
                 a.removeAttribute("class");
+                document.getElementById("bg").style.display="none";
+
                 document.getElementById("feed").style.display="none";
             }
         }
         function jahnagi(){
             document.getElementById("feed").style.display="none";
             document.getElementById("feed2").style.display="none";
+            document.getElementById("bg").style.display="none";
+
 
         }
     </script>
