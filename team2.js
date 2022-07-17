@@ -15,6 +15,7 @@ function move(){
 }
     
 function removeBar(){
+  
     var elem=document.getElementById("myBar");
      var id = setInterval(frame, 10);
        function frame() {
@@ -33,14 +34,15 @@ function satya(x){
         if((!(x.value=="") && !(x.value=="none"))|| (x.checked)){
             move();
             x.setAttribute("class","check");
-        }}
+        }
+
+    }
+   
 }
 
-
+var bc=document.forms[0];
 function check(){
-    var aa=["school","school2","board","specializationx6","country","state","cgpa1","pass1",
-"diploma","degree3","institute3","university3","country3","state3","specializationx4",
-"cgpa3","pass3"];
+   
 var b=["schoolx3","schoolx31","boardx3","specializationx3","countryx3","statex3",
 "cgpax3","passx3"];
 var c=["schoolx2","schoolx8","schoolx4","boardx2","specializationx2","countryx2",
@@ -52,39 +54,53 @@ var a=["school","school2","board","specializationx6","country","state","cgpa1","
 
     var m=document.getElementById("error");
     m.innerHTML="";
-    var b=document.forms[0];
+   
     var flag=0;
     var uma=document.getElementById("btn1");
     var uma2=document.getElementById("btn2");
     var uma3=document.getElementById("inter0");
     var uma4=document.getElementById("diploma");
-    if(uma3.checked){
-        a=aa.push(b);
-        
-    }
-    if(uma4.checked){
-        a=aa.push(c);
-    
-    }
     if((uma3.checked) && (uma4.checked)){
-        a=aa.push(b);
-        a=a.push(c);
+        for (var i=0;i<b.length;i++){
+            a.push(b[i]);
+        }
+       for (var i=0;i<c.length;i++){
+            a.push(c[i])
+       }
+       
        
     }
+    else if(uma3.checked){
+        for (var i=0;i<b.length;i++){
+            a.push(b[i]);
+            
+        }
+        console.log(a);
+    }
+    else if(uma4.checked){
+        for (var i=0;i<c.length;i++){
+            a.push(c[i])
+       }
+    
+    }
+    else{
+        flag=1;
+    }
+    
    for (var i=0;i<a.length;i++){
-    console.log(a);
-            if (b[a[i]].value=="" | b[a[i]].value=="none"){
+    
+            if (bc[a[i]].value=="" | bc[a[i]].value=="none"){
                 document.getElementById("error").style.display="block";
                 flag=1;
                try{ 
-                item2=b[a[i]].item(0).parentElement.parentElement.parentElement.nextElementSibling.innerHTML;
-                item1=b[a[i]].item(0).parentElement.parentElement.parentElement.firstElementChild.innerText;
+                item2=bc[a[i]].item(0).parentElement.parentElement.parentElement.nextElementSibling.innerHTML;
+                item1=bc[a[i]].item(0).parentElement.parentElement.parentElement.firstElementChild.innerText;
                 m.innerHTML+="<a  href=\"#"+a[i]+"\"class=\"linker\"><section>"+item1+"</section><section>"+item2+"</section><section>&#x1F441</section></a>";
                console.log("hii");
             }
                catch (err){
-                item2=b[a[i]].parentElement.parentElement.parentElement.nextElementSibling.innerHTML;
-                item1=b[a[i]].parentElement.parentElement.parentElement.firstElementChild.innerText;
+                item2=bc[a[i]].parentElement.parentElement.parentElement.nextElementSibling.innerHTML;
+                item1=bc[a[i]].parentElement.parentElement.parentElement.firstElementChild.innerText;
                 m.innerHTML+="<a  href=\"#"+a[i]+"\"class=\"linker\"><section>"+item1+"</section><section>"+item2+"</section><section>&#x1F441</section></a>";
     
                }
@@ -102,6 +118,7 @@ var a=["school","school2","board","specializationx6","country","state","cgpa1","
 
 
 function gay3(x){
+    satya(x);
     if (x.value=="" | x.value=="none"){
         x.parentElement.parentElement.parentElement.nextElementSibling.style.display="block";
     }
