@@ -5,7 +5,7 @@
    }
    
 }
-
+select:hover{ border-color:rgb(134,38,195);}
 .green{color: white;
     background-color:rgb(134, 38, 195)}
 #othern1,#othern2,#othern3{
