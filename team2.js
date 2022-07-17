@@ -49,7 +49,7 @@ var c=["schoolx2","schoolx8","schoolx4","boardx2","specializationx2","countryx2"
 "statex2","cgpax2","passx2"];
 var d=["backlog1","backlog2"];
 var a=["school","school2","board","specializationx6","country","state","cgpa1","pass1",
-"diploma","degree3","institute3","university3","country3","state3","specializationx4",
+"degree3","institute3","university3","country3","state3","specializationx4",
 "cgpa3","pass3"];
 
     var m=document.getElementById("error");
